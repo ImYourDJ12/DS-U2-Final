@@ -1,0 +1,12 @@
+1. 2 loops. One for moving the animals, and one for looping through bears that are going to
+starve.
+2. River.place_baby() changes the population and animals list aswell as the animals on
+the river itself. River.animal_death() affects self.animals and self.population and the
+animals on the board.
+3. Animal.collision() triggers the Bear.consume() which then triggers Animal.death() which
+then triggers River.death().
+4. All of these functions effect the bear and the amount of lives it has.
+5. 1. The animal will display in a different place. Animals that collide will be
+removed.
+   2. When two animals collide the board should not be redraw as it will be redrawn at
+   the end of the day.
